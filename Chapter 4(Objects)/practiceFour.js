@@ -61,17 +61,16 @@
 
 //4.6
 
+// let  arr  = [1,2,3,4];
 
-let  arr  = [1,2,3,4];
+// arr.forEach(elem  =>{
 
-arr.forEach(elem  =>{
+// if(elem  ==  1){
 
-if(elem  ==  1){
+// continue;
 
-continue;
+// }
 
-}
+// console.log(elem);
 
-console.log(elem);
-
-})
+// })
