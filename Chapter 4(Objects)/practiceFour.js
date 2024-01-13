@@ -74,3 +74,52 @@
 // console.log(elem);
 
 // })
+
+//4.7
+// let airplane = {
+//   flightName: "fly india",
+
+//   atacode: "FI",
+
+//   ratings: 4.9,
+
+//   book: function (passenger, flightNum) {
+//     console.log(
+//       `${passenger} Booked flight in ${this.flightName} with flight Number ${this.atacode}${flightNum}`
+//     );
+//   },
+// };
+
+// let bookMethod = airplane.book; // when we use the expression for call method of objects to use call apply or bind
+
+// bookMethod.call(airplane, "john", 8754);
+
+//4.8
+
+// let arr = [1, 2, 3, 4];
+
+// for (let elem in arr) {
+//   console.log(elem); /// it will print the index of array
+// }
+
+//4.9
+
+// let Shopping_car = [
+//   {
+//     addItem: function (itemName) {
+//       return itemName;
+//     },
+//   },
+//   {
+//     removeItem: function (itemName) {
+//       Shopping_car.forEach(element => {
+//         element.itemName === this.addItem(this.itemName)
+//       });
+//     },
+//   },
+//   {
+//     cart: function (size) {
+//       return size;
+//     },
+//   },
+// ];
