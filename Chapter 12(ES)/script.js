@@ -276,36 +276,100 @@
 
 //Sets
 
-let openingHours = {
-  sunday: { ope: "09:00AM", clos: "11:00PM" },
-  monday: { ope: "10:00AM", clos: "10:00PM" },
-  tuesday: { ope: "8:00AM", clos: "10:00PM" },
-};
+// let openingHours = {
+//   sunday: { ope: "09:00AM", clos: "11:00PM" },
+//   monday: { ope: "10:00AM", clos: "10:00PM" },
+//   tuesday: { ope: "8:00AM", clos: "10:00PM" },
+// };
 
-const hotel = {
-  name: "hotell",
-  live: "Street No XYZ Pune",
-  categories: ["Chinese", "italian", "English"],
-  mainMenu: ["FoodA", "FoodB", "FoodC"],
-  starterMenu: ["SpecialFoodA", "SpecialFoodB"],
-  openingHours,
-};
+// const hotel = {
+//   name: "hotell",
+//   live: "Street No XYZ Pune",
+//   categories: ["Chinese", "italian", "English"],
+//   mainMenu: ["FoodA", "FoodB", "FoodC"],
+//   starterMenu: ["SpecialFoodA", "SpecialFoodB"],
+//   openingHours,
+// };
 
-//Sets
+// //Sets
 
-// let itemSet = new Set([3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3]);
+// // let itemSet = new Set([3, 4, 5, 6, 7, 8, 9, 9, 8, 7, 6, 5, 4, 3]);
 
-// console.log(itemSet);
+// // console.log(itemSet);
 
-// for (let item of itemSet) {
-//   console.log(item);
-// }
+// // for (let item of itemSet) {
+// //   console.log(item);
+// // }
 
-//Maps DSA
+// //Maps DSA
 
-let restaurantMap = new Map();
+// let restaurantMap = new Map();
 
-restaurantMap.set(name, "bombay");
-restaurantMap.set(1, "address").set(true, "we are opening today");
+// restaurantMap.set(name, "bombay");
+// restaurantMap.set(1, "address").set(true, "we are opening today");
 
-console.log(restaurantMap);
+// console.log(restaurantMap);
+
+////Practice
+
+//12.1
+// let arr = [3, 4, 5, 7, 98, 0];
+
+// let [a, b, , c] = arr;
+
+// console.log(a, b, c); // 3,4,7
+
+//12.2
+
+// let arr = [1, 3, [2, 55], [9, 8, 7]];
+
+// let [a, , [b, c], d] = arr;
+
+// console.log(a, b, c, d); // 1,2,55 [9,8,7]
+
+//12.3
+
+// let obj = {
+//   name: "John",
+
+//   age: 25,
+
+//   weight: 70,
+// };
+
+// let { name: objName, age } = obj;
+
+// console.log(obj, age); /// 25
+
+//12.4 (Create shallow copy)
+
+// let nums = [5, 7, 4, 9, 2, 8];
+
+// let newNums = [...nums];
+
+// console.log(nums);
+
+//12.5
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const getNumber = (...num) => {
+//   if (num.length < 4) {
+//     return `Atleast you have maximux lenght greater than 4`;
+//   }
+//   return num.slice(-4);
+// };
+
+// const result = getNumber(...nums);
+
+// console.log(result);
+
+// output data: 5,6,7,8
+
+//12.6
+
+// let nums = 0;
+
+// let result = nums ?? 50;
+
+// console.log(result);
