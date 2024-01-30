@@ -373,3 +373,104 @@
 // let result = nums ?? 50;
 
 // console.log(result);
+
+//12.7
+
+// let student = {
+//   Math: {
+//     score: 75,
+//   },
+
+//   physics: {
+//     score: 85,
+//   },
+// };
+
+// let physicsScore = student?.physics?.score;
+
+// if (physicsScore) {
+//   console.log(`This is score of physics ${physicsScore}`);
+// } else {
+//   console.log(`not is score of physics `);
+// }
+
+//12.8
+
+// let nums = [2, 3, 4, 5, 6];
+
+// for (let [key] of nums) {
+//   console.log(key);
+// }
+
+//***
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let arr1 = [...arr];
+
+// arr1[2] = 10;
+
+// console.log(arr, arr1);
+
+//Question 2: You have given a list of variable names written in underscore. You have to write a program to convert them into camel casing format
+
+// let str = "date_of_birth";
+
+// const converCamelCase = (str) => {
+//   let words = str.split("_");
+
+//   for (let i = 1; i < words.length; i++) {
+//     words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+//   }
+//   let camelCase = words.join("");
+//   return camelCase;
+// };
+
+// let result = converCamelCase(str);
+
+// console.log(result);
+
+//Question 3: Guess the Output and Explain why?
+
+// function fun(a, b, ...c) {
+//   console.log(`${a}  ${b}`);
+
+//   console.log(c);
+
+//   console.log(c[0]);
+
+//   console.log(c.length);
+
+//   console.log(c.indexOf("google"));
+// }
+
+// fun("apple", "sumsung", "amazon", "google", "facebook");
+
+//
+
+// const fruits = { apple: 8, orange: 7, pear: 5 };
+
+// const entries = Object.entries(fruits);
+
+// console.log(entries);
+
+// for (const [fruit, count] of entries) {
+//   console.log(`There are ${count}  ${fruit}s`);
+// }
+
+//
+// let arr = new Set([1, 2, 3, 1, 2, 1, 3, 4, 6, 7, 5]);
+
+// let length = arr.size;
+
+// console.log(arr, length);
+
+//
+
+// let number = 40;
+
+// let age = 18;
+
+// let result = number > 50 ? (age > 19 ? "pass" : "ageIssue") : "numberIssue";
+
+// console.log(result);
